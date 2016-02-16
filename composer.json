@@ -1,0 +1,6 @@
+{
+    "require": {
+        "amphp/artax": "^1.0",
+        "emanueleminotto/simple-html-dom": "^1.5"
+    }
+}

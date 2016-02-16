@@ -1,0 +1,5 @@
+vendor
+composer.lock
+out.txt
+test.php
+*.szd
