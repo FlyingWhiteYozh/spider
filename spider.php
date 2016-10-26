@@ -24,7 +24,7 @@ pcntl_signal(SIGINT,  $shutdown);
 
 register_shutdown_function($shutdown);
 
-$spider = new Spider('http://www.sendflowers.ru/');
+$spider = new Spider('http://energo-russia.ru/');
 
 // $spider->addUri('http://petscage.ru/');
 // $spider->addUri('http://petscage.ru/category/kleti-dlya-malenkij-ptic/');

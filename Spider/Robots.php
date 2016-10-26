@@ -46,9 +46,9 @@ class Robots
     {
         $escape = ['$' => '\$', '?' => '\?', '.' => '\.', '*' => '.*'];
         foreach ($rules as $rule) {
-            foreach ($escape as $search => $replace) {
-                $escaped = str_replace($search, $replace, $rule);
-            }
+            
+            $escaped = str_replace(array_keys($escape), array_values($escape), $rule);
+            
             if (preg_match('{^' . $escaped . '}', $url)) {
             	// var_dump('Match:' . $url . ' | ' . $escaped);
                 return $rule;
