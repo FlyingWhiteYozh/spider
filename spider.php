@@ -24,7 +24,7 @@ pcntl_signal(SIGINT,  $shutdown);
 
 register_shutdown_function($shutdown);
 
-$spider = new Spider('http://www.domadengi.ru/');
+$spider = new Spider('http://www.sendflowers.ru/');
 
 // $spider->addUri('http://petscage.ru/');
 // $spider->addUri('http://petscage.ru/category/kleti-dlya-malenkij-ptic/');
@@ -42,6 +42,14 @@ $spider->addFilter('set_filter=');
 $spider->addFilter('sort=');
 $spider->addFilter('count=');
 $spider->addFilter('send_if_quant');
+$spider->addFilter('per_page=');
+$spider->addFilter('ADD2BASKET');
+$spider->addFilter('price=');
+$spider->addFilter('addToCompare');
+$spider->addFilter('www.youtube.com');
+$spider->addFilter('banners/go_to');
+$spider->addFilter('compare/');
+$spider->addFilter('emarket/');
 
 $spider->checkAsync();
 // var_dump($spider);

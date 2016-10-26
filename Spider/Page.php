@@ -13,7 +13,8 @@ class Page
 		$title,
 		$description,
 		$keywords,
-		$h1;
+		$h1,
+		$canonical;
 
 	public function __construct($uri)
 	{
