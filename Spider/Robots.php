@@ -44,7 +44,7 @@ class Robots
 
     public function check($rules, $url)
     {
-        $escape = ['$' => '\$', '?' => '\?', '.' => '\.', '*' => '.*'];
+        $escape = ['$' => '\$', '?' => '\?', '.' => '\.', '*' => '.*', '[' => '\['];
         foreach ($rules as $rule) {
             
             $escaped = str_replace(array_keys($escape), array_values($escape), $rule);
